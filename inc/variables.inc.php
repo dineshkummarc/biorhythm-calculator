@@ -4,7 +4,7 @@ ini_set('display_errors', 'On');
 ini_set('max_execution_time', 0);
 set_time_limit(0);
 require __DIR__.'/prep.inc.php';
-$base_url = 'http://localhost/bio';
+$base_url = 'http://local.rocket.co.in:8081/biorhythm-calculator/';
 $default_dt = new DateTime('now', new DateTimezone(date_default_timezone_get()));
 $p = isset($_GET['p']) ? prevent_xss($_GET['p']): 'home';
 $q = isset($_GET['q']) ? prevent_xss($_GET['q']): "";
